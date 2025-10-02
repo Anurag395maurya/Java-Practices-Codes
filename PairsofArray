@@ -1,0 +1,19 @@
+Create a Pairs of Array List
+class ArrayPairs {
+    public static int ArrayPairs(int number[]){
+        int totalpairs=0;
+        for(int i=0;i<number.length;i++){   //Print the first number of the pairs
+            int current=number[i];
+            for(int j=i+1;j<number.length;j++){   //Print the Second number of the pairs
+                System.out.print("(" + current + "," + number[j] + ")");
+                totalpairs++;   //Print total no of pairs
+            }
+            System.out.println();
+        }
+        return totalpairs;
+    }
+    public static void main(String args[]){
+        int number[]={2,4,6,8,10,12};
+        ArrayPairs(number);
+    }
+}
