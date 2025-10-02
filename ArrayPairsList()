@@ -1,0 +1,17 @@
+Print Pairs of Array (make pairs same number also)
+class ArrayPairs {
+    public static int ArrayPairs(int number[]){
+        for(int i=0;i<number.length;i++){
+            int current=number[i];
+            for(int j=i;j<number.length;j++){
+                System.out.print("(" + current + "," + number[j] + ")");
+            }
+            System.out.println();
+        }
+        return totalpairs;
+    }
+    public static void main(String args[]){
+        int number[]={2,4,6,8,10,12};
+        ArrayPairs(number);
+    }
+}
